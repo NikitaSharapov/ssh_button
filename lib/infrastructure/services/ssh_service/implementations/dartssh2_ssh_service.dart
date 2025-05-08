@@ -20,7 +20,6 @@ class Dartssh2SshService implements SshService {
       );
 
       await session.done;
-      session.close();
 
       final stdout = await session.stdout.firstOrNull;
       if (stdout != null) {
